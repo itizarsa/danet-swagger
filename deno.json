@@ -1,0 +1,19 @@
+{
+	"nodeModulesDir": "auto",
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+	"tasks": {
+		"dev": "deno run --watch main.ts",
+		"check": "deno run -A npm:@biomejs/biome check --write ."
+	},
+	"imports": {
+		"@anatine/zod-openapi": "npm:@anatine/zod-openapi@2.2.6",
+		"@biomejs/biome": "npm:@biomejs/biome@^1.9.4",
+		"@danet/core": "jsr:@danet/core@^2.7.0",
+		"@danet/swagger": "jsr:@danet/swagger@^2.3.1",
+		"@danet/zod": "jsr:@danet/zod@^0.0.8",
+		"zod": "npm:zod@3.23.8"
+	}
+}
